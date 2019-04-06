@@ -4,10 +4,10 @@ class Passenger(object):
 		self.x = x
 		self.y = y
 		self.closest_stop = None
-		self.in_range_stops = None
+		self.in_range_stops = []
 
 	def add_closest_stop(self, stop_id):
 		self.stop = stop_id
 
-	def add_in_range_stops(self, stop_ids):
-		self.in_range_stops = stop_ids
+	def add_in_range_stop(self, stop_id):
+		self.in_range_stops.append(stop_id)
